@@ -4,19 +4,13 @@
 # Updated on 06/08/2018
 
 # end execution if any command fails
-set -e
+# set -e
 
 
 echo ""
 echo " New Kali Environment Setup"
 echo "________________________________________________ \n"
-echo "set -e is active \n"
-#echo "===== apt-get TO STABLE ENVIRONMENT ===== \n"
-#apt-get update -y
-#apt-get upgrade -y
-#apt-get dist-upgrade -y
-#apt-get autoclean -y
-echo "_________________________________________ \n"
+# echo "set -e is active \n"
 
 echo "===== CHECK FOR GIT ====="
 if test ! $(which git); then
