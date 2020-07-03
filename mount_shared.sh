@@ -1,9 +1,5 @@
 #! /bin/sh
 
-set -e
-
-! /bin/sh
-
 # Setup Kali Environment
 # Updated on 06/08/2018
 
@@ -17,7 +13,7 @@ echo " mount 'shared' folder which is hosted on master OS to VMWare Kali Linux G
 echo " Make sure you are fully updated, and upgraded. Run the update.sh script if not "
 echo "________________________________________________ \n"
 echo "\n===== Make ~/mnt/hgfs mount point on Guest OS  ====="
-mkdir -p  ~/mnt/hgfs
+mkdir -p /mnt/hgfs
 
 echo "\n===== Mount Shared Folder from Master OS to Guest OS  ====="
 vmware-hgfsclient | while read folder; do
