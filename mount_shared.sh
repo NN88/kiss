@@ -9,9 +9,11 @@
 
 echo ""
 echo " Mount Up!!!!!!! "
-echo " mount 'shared' folder which is hosted on master OS to VMWare Kali Linux Guest OS"
-echo " Make sure you are fully updated, and upgraded. Run the update.sh script if not "
+echo " mount 'shared' folder which is hosted on master OS to VMWare Kali Linux Guest OS. Make sure you are fully updated, and upgraded. Run the update.sh script if not "
 echo "________________________________________________ \n"
+
+echo "\n===== Create mount point ====="
+sudo mkdir -p /mnt/hgfs
 
 echo "\n===== Mount Shared Folder from Master OS to Guest OS  ====="
 sudo mount -t fuse.vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
