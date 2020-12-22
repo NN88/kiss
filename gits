@@ -1,11 +1,13 @@
+# /opt
 https://github.com/tmux-plugins/tmux-logging
 https://github.com/leebaird/discover
-https://github.com/danielmiessler/SecLists.git
-apt-get dirbuster
-apt-get gobuster
-git@github.com:rebootuser/LinEnum.git
 https://github.com/rebootuser/LinEnum.git
 http://www.securitysift.com/download/linuxprivchecker.py
 https://github.com/InteliSecureLabs/Linux_Exploit_Suggester.git
 https://github.com/pentestmonkey/unix-privesc-check.git
+
+# tools.kali.org
+https://github.com/danielmiessler/SecLists.git
+apt-get gobuster
+
 
