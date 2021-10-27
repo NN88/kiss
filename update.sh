@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # Update Kali 
-# Updated on 06/2020/2020
+# Updated on 03/20/2021
 
 # end execution if any command fails
 set -e
@@ -23,4 +23,16 @@ apt-get dist-upgrade
 echo "\n * apt-get autoclean *"
 echo "______________________________________"
 apt-get autoclean
+echo "\n * wpscan --update *"
+echo "______________________________________"
+wpscan --update
+echo "\n * seclist --update *"
+echo "______________________________________"
+git --git-dir=/usr/share/seclists/.git pull
+echo "_____________________________________"
+echo "\n * ALWAYS LAST!!! searchsploit --update *"
+echo "______________________________________"
+searchsploit --update
+echo "______________________________________"
 echo "\n\n===== Happy Hacking! ===== \n\n"
+
