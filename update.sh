@@ -29,6 +29,9 @@ wpscan --update
 echo "\n * seclist --update *"
 echo "______________________________________"
 git --git-dir=/usr/share/seclists/.git pull
+echo "--------------------------------------"
+echo "\n * updatedb *"
+updatedb
 echo "_____________________________________"
 echo "\n * ALWAYS LAST!!! searchsploit --update *"
 echo "______________________________________"
