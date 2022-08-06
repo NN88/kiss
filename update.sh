@@ -23,13 +23,6 @@ apt-get dist-upgrade
 echo "\n * apt-get autoclean *"
 echo "______________________________________"
 apt-get autoclean
-echo "\n * wpscan --update *"
-echo "______________________________________"
-wpscan --update
-echo "\n * seclist --update *"
-echo "______________________________________"
-git --git-dir=/usr/share/seclists/.git pull
-echo "--------------------------------------"
 echo "\n * updatedb *"
 updatedb
 echo "_____________________________________"
