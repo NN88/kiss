@@ -61,5 +61,39 @@ else
 	echo "\n"
 fi
 
+echo "===== CHECK FOR tmux ====="
+if test ! $(which tmux); then
+	echo " x tmux not found, so installing tmux!"
+	echo $(apt-get install tmux)
+	echo "\n"
+	exit
+else
+	echo " @ tmux found"
+	echo "\n"
+fi
+
+echo "===== CHECK FOR golang ====="
+if test ! $(which go); then
+	echo " x golang not found, so installing golang!"
+	echo $(apt-get -y install golang)
+	echo "\n"
+	exit
+else
+	echo " @ golang found"
+	echo "\n"
+fi
+
+echo "===== CHECK FOR oss-code ====="
+if test ! $(which vscode); then
+	echo " x oss-code not found, so installing oss-code!"
+	echo $(apt-get install oss-code)
+	echo "\n"
+	exit
+else
+	echo " @ oss-code found"
+	echo "\n"
+fi
+
+
 echo "\n"
 echo "Happy Hacking!"

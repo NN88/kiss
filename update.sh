@@ -24,11 +24,14 @@ echo "\n * apt-get autoclean *"
 echo "______________________________________"
 apt-get autoclean
 echo "\n * updatedb *"
+echo "______________________________________"
 updatedb
+echo "\n * apt-get autoremove *"
+echo "______________________________________"
+apt-get autoremove
 echo "_____________________________________"
 echo "\n * ALWAYS LAST!!! searchsploit --update *"
 echo "______________________________________"
 searchsploit --update
 echo "______________________________________"
 echo "\n\n===== Happy Hacking! ===== \n\n"
-
